@@ -1,0 +1,38 @@
+*{
+   margin: auto 0;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: .9rem;
+}
+body{
+   background-color: #4bbbff;
+}
+h5{
+   max-width: 400px;
+}
+h6{
+   max-width: 400px;
+}
+.icon{
+   font-size: 1.25rem;
+}
+.btn{
+   background-color: #4bbbff;
+}
+a{
+   color:white;
+}
+a:hover{
+   text-decoration: none;
+   color: yellow;
+}
+.hide{
+   display: none;
+}
+.time{
+   color: white;
+   font-size: 24pt;
+}
+.scoreElem{
+   font-size: 12pt;
+   color: white;
+}

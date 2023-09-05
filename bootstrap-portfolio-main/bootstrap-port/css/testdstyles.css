@@ -1,0 +1,182 @@
+*{
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html{
+    width:1440px;
+}
+
+/* Top Half Area */
+ #tophalf{
+    background-image: url(images/bg-pattern-top-desktop.svg);
+    background-repeat:no-repeat;
+    position: relative;
+    width:1440px;
+    padding: 140px 0 0 100px;
+    z-index:1;
+}
+/* Paragraphs start */
+#users{
+    position: absolute;
+    height:250px;
+    width: 500px;
+}
+h1{
+    position: absolute;
+    text-align: left;
+    color:#502050;
+    font-size: 36pt;
+    font-weight: 700;
+    width:350px;
+    height: 150px;
+}
+#service{
+    position: absolute;
+    height:300px;
+    width: 500px;
+}
+h6{
+    color:#937B92;
+    text-align: left;
+    position: absolute;
+    font-size: 15pt;
+    font-weight: 400;
+    line-height: 32px;
+    margin-top: 180px;
+}
+/* Paragraphs end */
+/* 5 start ratings begin */
+#rates{
+    height: 300px;
+    width:600px;
+    margin:0 0 0 690px;
+ }
+.rate{
+    background-color: #F7F2F7;
+    width: 600px;   
+    height: 60px;
+    border-radius: 10px;
+}
+#box1{
+    margin: 0 0 0 -90px;
+}
+#box2{
+    margin: 20px 0 0 -45px;
+}
+#box3{
+    margin: 20px 0 0 0;
+}
+h4{
+    color:#502050;
+    width:275px;
+    margin: 0 0 0 275px;
+    padding-top: 18px;
+}
+.stars li{
+    size: 2rem;
+    display: inline;
+}
+.stars ul{
+    position: absolute;
+    margin: 19px 0 0 50px;
+}
+/* 5 start ratings end */
+/* Bottom-Half Area */
+#bottom-half{
+    width: 1440px;
+    padding-left: 25px;
+    height:450px;
+    z-index:1;
+}
+/* background image */
+#background{
+    background-image: url(images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 673px;
+    min-width: 1440px;
+    width:100%;
+    left:185px;
+    position: absolute;
+    margin-top: -300px;
+    z-index:0;
+}
+/* customer boxes begin */
+#customers{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1340px;
+ }
+.quotes{
+    background-color: #502050;
+    color: #fff;
+    width:400px;
+    max-height: 300px;
+    border-radius: 10px;
+    border: none;
+}
+.namebox{
+    position: absolute;
+    margin: 40px 0 0 125px;
+    line-height: 32px;
+    width:125px;
+}
+.name{
+    position: absolute;
+    color: #fff;
+}
+.veri{
+    position: absolute;
+    color: #EE68A4;
+    font-size: 15pt;
+}
+.q{
+    position: absolute;
+    color: #fff;
+    text-align: left;
+    width: 355px;
+    max-height: 112px;
+    line-height: 28px;
+    font-size: .95em;
+    margin:125px 25px 0 25px;
+}
+/* Customer image and box controls */
+.colton{
+    background-image:url(images/image-colton.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+    margin:40px 0 0 50px;
+}
+.irene{
+    background-image:url(images/image-irene.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+    margin:40px 0 0 50px;
+}
+#I{
+    margin-top:25px;
+    height: 300px;
+}
+.anne{
+    background-image:url(images/image-anne.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    height: 60px;
+    width: 60px;
+    border-radius:50%;
+    margin:40px 0 0 50px;
+}
+#A{
+    margin-top:50px;
+    height: 300px;
+}

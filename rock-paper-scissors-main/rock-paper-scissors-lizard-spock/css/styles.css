@@ -1,0 +1,145 @@
+* {
+   background-color: black;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   margin: 0 auto;
+   background-color:hsl(229, 64%, 46%);
+}
+body{
+   background-color:hsl(229, 64%, 46%);
+}
+#head{
+   border-color: hsl(217, 16%, 45%);
+   border: 2px solid;
+   border-radius: 5px;
+}
+.name{
+   background-image: url(../images/logo-bonus.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   height: 115px;
+   width:115px;
+}
+.score-container{
+   max-width: 105px;
+}
+#score-title{
+   font-weight: 400;
+   color:hsl(229, 64%, 46%);
+}
+#score{
+   font-size: 20pt;
+   color: hsl(229, 64%, 46%);
+   font-variant: small-caps;
+
+} 
+.pentagon {
+   background-image: url(../images/bg-pentagon.svg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: contain;
+   background-color:hsl(229, 64%, 46%);
+   min-height: 360px;
+   max-width: 340px;
+   position: relative;
+}
+a{
+   height: 70px;
+   width: 70px;
+   z-index:1;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-size: 1.6em;
+   background-position: center;
+}
+.computer-image-holder{
+   height: 100px;
+   width: 100px;
+   position: absolute;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-size: 3em;
+   background-position: center;
+   border-radius: 50%;
+   top:140px;
+   left: 250px;
+}
+.user-image-holder{
+   height: 100px;
+   width: 100px;
+   position: absolute;
+   background-color: white;
+   background-repeat: no-repeat;
+   background-size: 3em;
+   background-position: center;
+   border-radius: 50%;
+   top:140px;
+   left:-10px;
+}
+#rock{
+   background-image:url(../images/icon-rock.svg);
+   position: absolute;
+   top:115px;
+   left:-10px;
+   border: 2px solid blue;
+}
+#paper{
+   background-image: url(../images/icon-paper.svg);
+   position: absolute;
+   top:0px;
+   left:131px;
+   border: 2px solid red;
+}
+#scissors{
+   background-image: url(../images/icon-scissors.svg);
+   position: absolute;
+   top:115px;
+   right:-10px;
+   border: 2px solid yellow;
+}
+#lizard{
+   background-image: url(../images/icon-lizard.svg);
+   position: absolute;
+   top:300px;
+   left:50px;
+   border: 2px solid purple;
+}
+#spock{
+   background-image: url(../images/icon-spock.svg);
+   position: absolute;
+   top:300px;
+   right:50px;
+   border: 2px solid aqua;
+}
+h5{
+   color:#5812FF;
+}
+.modal-button{
+   border-color:#5812FF;
+   color:#5812FF;
+}
+.close{
+   color:#5812FF
+}
+.hidden{
+   display: none;
+}
+#play-again{
+   position: absolute;
+   height:45px;
+   top:167px;
+   left:107px;
+}
+#reset-score{
+   position: absolute;
+   height:45px;
+   top:220px;
+   left:100px;
+}
+#result{
+   position: absolute;
+   font-size: 18pt;
+   top:130px;
+   left: 105px;
+}

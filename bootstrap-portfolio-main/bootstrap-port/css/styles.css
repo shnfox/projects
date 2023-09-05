@@ -1,0 +1,25 @@
+/* Style sheet for Bootstrap Portfolio */
+*{
+   font-family: Arial, Helvetica, sans-serif, monospace;
+}
+/* Hover effect for Portfolio pictures and links */
+.fx :hover{
+   background-color: darkcyan;
+   opacity: 50%;
+}
+.head{
+   padding-right: 0px;
+   padding-left: 0px;
+}
+.row{
+   margin-right:0;
+}
+#uc{
+   background-color: #000;
+   
+}
+@media only screen and (max-width:1440px){
+   .hid{
+      display: none;
+   }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- displays site properly based on user's device -->
+   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css"
+      integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Frontend Mentor | Rock, Paper, Scissors, Lizard, Spock</title>
+</head>
+
+<body class="p-1"><!-- Start of body-->
+   <header class="container-fluid row mx-auto mt-3 p-2" id="head">
+      <!-- Main Header with game name and score container -->
+      <div class="name ml-0"></div> <!-- game name -->
+      <div class="flex-column col-4 bg-white container rounded score-container mr-0 p-1 "> <!-- score container-->
+         <p class="text-center bg-white mb-1" id="score-title">Score</p> <!-- score title-->
+         <p class="bg-white p-1 rounded text-center" id="score">0</p> <!-- score text-->
+      </div> <!-- end score container-->
+   </header> <!-- end header-->
+   <section class="pentagon mx-auto row mt-4 mb-4"> <!-- pentagon container-->
+      <div class="choices-container column" id='image-icons'> <!-- user choices container-->
+         <a href="#" class="choices rounded-circle shadow-sm" id="rock"></a> <!-- rock choice-->
+         <a href="#" class="choices rounded-circle shadow-sm" id="paper"></a> <!-- paper choice-->
+         <a href="#" class="choices rounded-circle shadow-sm" id="scissors"></a> <!-- scissors choice-->
+         <a href="#" class="choices rounded-circle shadow-sm" id="lizard"></a> <!-- lizard choice-->
+         <a href="#" class="choices rounded-circle shadow-sm" id="spock"></a> <!-- spock choice-->
+      </div> <!-- end choices container-->
+      <span class="hidden user-image-holder"></span> <!-- user image holder-->
+      <button type="button" class="hidden border-white rounded text-white" id="play-again">Play Again!
+      </button> <!-- play again button-->
+      <button type="button" class="hidden border-white rounded text-white" id="reset-score">Reset Score!
+      </button> <!-- reset score button-->
+      <span class="hidden text-white" id="result"></span> <!-- result after compare-->
+      <span class="hidden computer-image-holder"></span> <!-- computer image holder-->
+   </section> <!-- end pentagon container-->
+
+   <div class="row mt-2 mx-auto justify-content-around p-2"> <!-- modal start for rules button-->
+      <button type="button" class="border-white rounded text-white mt-1" id="rules" data-toggle="modal"
+         data-target="#rulesModal">Rules
+      </button> <!-- rules button-->
+      <div class="modal fade" id="rulesModal" tabindex="-1" role="dialog" aria-labelledby="rulesModalLabel"
+         aria-hidden="true">
+         <div class="modal-dialog bg-light rounded" role="document">
+            <div class="modal-content"> <!-- modal content start-->
+               <div class="modal-header bg-white"> <!-- modal header start-->
+                  <h5 class="modal-title bg-white text-center" id="rulesModalLabel">Rules for Rock, Paper, Scissors,
+                     Lizard, Spock</h5> <!-- modal title text-->
+                  <button type="button bg-white" class="close" data-dismiss="modal" aria-label="Close">
+                     <span class="bg-white" aria-hidden="true">&times;</span>
+                  </button> <!-- modal close icon-->
+               </div>
+               <div class="modal-body bg-white"> <!-- rules image container start -->
+                  <img src="images/image-rules-bonus.svg" alt="rules expalining what user choice beats computer choice"
+                     class="bg-white"><!-- rules image-->
+               </div><!-- rules image container end -->
+               <div class="modal-footer bg-white">
+                  <button type="button bg-white" class="btn bg-white modal-button" data-dismiss="modal">Close</button>
+                  <!-- modal close button-->
+               </div> <!-- end modal footer -->
+            </div> <!-- modal content end -->
+         </div> <!-- modal dialog end -->
+      </div> <!-- modal fade end -->
+   </div> <!-- modal end -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha512-ldc1sPu1FZ8smgkgp+HwnYyVb1eRn2wEmKrDg1JqPEb02+Ei4kNzDIQ0Uwh0AJVLQFjJoWwG+764x70zy5Tv4A=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js"
+      integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+      integrity="sha512-+NqPlbbtM1QqiK8ZAo4Yrj2c4lNQoGv8P79DPtKzj++l5jnN39rHA/xsqn8zE9l0uSoxaCdrOgFs6yjyfbBxSg=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+   <script src="js/js.js"></script>
+</body>
+
+</html>

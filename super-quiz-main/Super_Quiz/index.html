@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/css/bootstrap.min.css" integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Bootstrap Support-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Font Awesome Support-->
+   <link rel="stylesheet" href="css/styles.css">
+   <title>Super Quiz</title>
+</head><!-- End of Head -->
+
+<body>
+   <header class="header bg-primary text-light text-center">
+      <h2 class="mb-0 shadow">Welcome to Super Quiz</h2>
+   </header><!-- End of Header -->
+   <main>
+      <div class="container main-page" id="main-page">
+         <div class="col">
+            <div class="row mt-3 justify-content-center">
+               <h5 class="text-center text-white font-weight-light ">Test your knowledge of random trivia!<br><br>When
+                  you are ready to play, click on the “Play Now” button. A random trivia question will appear. Select an
+                  answer, and a message will appear advising you if the answer was correct. Then click on the “Next”
+                  button to move onto the next question.</h5>
+            </div><!-- Row-->
+         </div><!-- Column-->
+         <div class="col">
+            <div class="row justify-content-center">
+               <label class="sr-only">Play Now!</label><button class="btn btn-outline-success text-white shadow"
+                  id="play-now" type="button">Play Now!</button>
+            </div><!-- Button -->
+         </div><!-- Column-->
+         <div class="col">
+            <div class="row mt-4 justify-content-center">
+               <h5 class="text-center text-white mt-0 font-weight-light">You can also add your own question with answer
+                  options below. Enjoy!<a class="fa fa-grin-alt font-weight-normal icon" data-toggle="tooltip"
+                     data-placement="top" title="Smile! Goes to new page!"
+                     href="images/feelings.png"
+                     rel="external"></h5></a>
+            </div><!-- Row-->
+         </div><!-- Column-->
+         <div class="col">
+            <div class="row justify-content-center">
+               <label class="sr-only">Add a question button.</label><button
+                  class="btn btn-outline-success text-white shadow" id="add-question" value="Add?"
+                  type="button">Add?</button>
+            </div><!-- Button -->
+         </div><!-- Column-->
+      </div><!-- Container-->
+      <section class="question-input hide">
+         <!-- start of add a question section -->
+         <div class="container-fluid " id="">
+            <div class="col">
+               <div class="row mt-3 justify-content-center pb-3">
+                  <h5 class="text-center font-weight-light text-white">Please use the form below to submit your own
+                     question and answer options. You will be taken back to the home page ofter clicking the “Submit”
+                     button where you can click the “Play Now” button to take the quiz.</h5>
+               </div><!-- Row -->
+            </div><!-- Column -->
+            <div class="col">
+               <div class="row justify-content-center">
+                  <h6 class="text-center font-weight-light text-white justify-content-center">Add Your Question Below!
+                  </h6>
+               </div><!-- Row -->
+            </div><!-- Column -->
+         </div><!-- Container -->
+         <form class="container pt-0 col-9 justify-content-center">
+            <fieldset class="form-group">
+               <div class="form-group pt-2">
+                  <label class="sr-only">Type your question here</label><input
+                     class="form-control rounded mb-1 shadow border-success" type="text" id="userQuestion"
+                     placeholder="Type your question here...">
+                  <label class="sr-only">Possible Answer</label><input
+                     class="form-control rounded mb-1 shadow border-success" type="text" id="userAnswer0"
+                     placeholder="Possible answer here...">
+                  <label class="sr-only">Possible Answer</label><input
+                     class="form-control rounded mb-1 shadow border-success" type="text" id="userAnswer1"
+                     placeholder="Possible answer here...">
+                  <label class="sr-only">Possible Answer</label><input
+                     class="form-control rounded mb-1 shadow border-success" type="text" id="userAnswer2"
+                     placeholder="Possible answer here...">
+                  <label class="sr-only">Possible Answer</label><input
+                     class="form-control rounded mb-1 shadow border-success" type="text" id="userAnswer3"
+                     placeholder="Possible answer here...">
+               </div><!-- form-group -->
+               <div class="container-fluid font-weight-light text-center text-white">
+                  <label for="answer-select">Choose the correct answer:</label>
+                  <select class="mb-2" id="answer-select" data-toggle="tooltip" data-placement="top"
+                     title="Correct Answer">
+                     <option></option>
+                     <option value="0">1</option>
+                     <option value="1">2</option>
+                     <option value="2">3</option>
+                     <option value="3">4</option>
+                  </select> <a class="fa fa-pastafarianism icon" data-toggle="tooltip" data-placement="top"
+                     title="Flying Spaghetti Monster, Goes to a new page!"
+                     href="https://en.wikipedia.org/wiki/Flying_Spaghetti_Monster"
+                     rel="external"></a>
+                  <div class="container-fluid">
+                     <label class="sr-only">Submit Button</label><button
+                        class="btn btn-outline-success btn-block text-white shadow" id='submit' type="submit">Submit
+                        your question</button>
+                  </div><!-- Button -->
+               </div><!-- Option List -->
+            </fieldset><!-- Form-group -->
+         </form><!-- Form Container -->
+      </section><!-- End of add a question section -->
+   </main><!-- Main -->
+   <section class="quiz-page hide">
+      <!-- start of start quiz section -->
+      <div class="col">
+         <div class="row justify-content-center">
+            <label class="sr-only">Start Quiz</label><button class="btn btn-outline-success text-white shadow mt-5"
+               id="start-quiz" value="start" type="button">Start Quiz</button>
+         </div><!-- Button -->
+      </div><!-- Column-->
+      <div class="col container">
+         <!-- start of quiz container -->
+         <div class="row mt-3 justify-content-center">
+            <!-- start of question div -->
+            <div class='mt-2 p-1 hide text-center' id="question-div">this is where the question goes</div>
+         </div><!-- end of question div -->
+         <div class="row mt-3 justify-content-center hide" id="choices-div">
+            <!-- start of choices div -->
+            <label class="sr-only">Question 1</label><button class="btn btn-outline-success text-white shadow mb-3 mr-1"
+               id="answer0" data-index="0" type="button">ANSWER TEXT GOES HERE</button>
+            <label class="sr-only">Question 2</label><button class="btn btn-outline-success text-white shadow mb-3 mr-1"
+               id="answer1" data-index="1" type="button">ANSWER TEXT GOES HERE</button>
+            <label class="sr-only">Question 3</label><button class="btn btn-outline-success text-white shadow mb-3 mr-1"
+               id="answer2" data-index="2" type="button">ANSWER TEXT GOES HERE</button>
+            <label class="sr-only">Question 4</label><button class="btn btn-outline-success text-white shadow mb-3 mr-1"
+               id="answer3" data-index="3" type="button">ANSWER TEXT GOES HERE</button>
+         </div><!-- end of choices div -->
+   </section><!-- End of start quiz section -->
+   <section>
+      <!-- start of next question, timer and score sections-->
+      <div class="col">
+         <div class="row justify-content-center">
+            <label class="sr-only">Next question button.</label><button
+               class="btn btn-outline-success text-white shadow hide" id="next-question" value="next?"
+               type="button">Next Question ></button>
+         </div><!-- Button -->
+      </div><!-- Column-->
+      <div class="row mt-3 justify-content-center" id="timer">
+      </div><!-- end of quiz container -->
+      <div class="row mt-3 hide justify-content-center " id="score-div">
+         <!-- start of score div -->
+         <div class="col-4 text-center">
+            <span class="time" id="correct"></span><br>
+            <span class="scoreElem">Correct</span>
+         </div>
+         <div class="col-4 text-center">
+            <span class="time" id="incorrect"></span><br>
+            <span class="scoreElem">Incorrect</span>
+         </div>
+         <div class="col-4 text-center">
+            <span class="time" id="totalScore"></span><br>
+            <span class="scoreElem">Your Total Score</span>
+         </div>
+         <button class="btn mt-2 btn-outline-success text-white shadow hide" id="retakeQuiz" type='button'>Retake
+            Quiz!</button>
+      </div><!-- end of score div -->
+
+   </section><!-- end of next question, timer and score sections-->
+   </main><!-- End of Main -->
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.slim.min.js" integrity="sha512-M+qMI1PHRcYcOpJzeJlaWbVVx2JJyPIwZas8or7dc97LZOokjvbpfRxymhVtlJLyjiF3wGyr0FJOA4DLONLVLw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap Support-->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.5.3/js/bootstrap.min.js" integrity="sha512-8qmis31OQi6hIRgvkht0s6mCOittjMa9GMqtK9hes5iEQBQE/Ca6yGE5FsW36vyipGoWQswBj/QBm2JR086Rkw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><!-- Bootstrap Support-->
+   <!-- jquery Support -->
+   <script src="js/super_quiz.js"></script>
+
+</body><!-- End of Body -->
+
+</html><!-- End of HTML -->
